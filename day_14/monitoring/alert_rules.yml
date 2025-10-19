@@ -1,0 +1,48 @@
+# Alert Rules for RAG Pipeline
+groups:
+- name: rag_pipeline_alerts
+  rules:
+  - alert: RAGPipelineDown
+    expr: up{job="rag-pipeline"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "RAG Pipeline API is down"
+      description: "RAG Pipeline API has been down for more than 1 minute."
+
+  - alert: HighErrorRate
+    expr: rate(rag_pipeline_errors_total[5m]) > 0.1
+    for: 2m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High error rate in RAG Pipeline"
+      description: "Error rate is {{ $value }} errors per second."
+
+  - alert: HighResponseTime
+    expr: histogram_quantile(0.95, rate(rag_request_duration_seconds_bucket[5m])) > 2
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High response time"
+      description: "95th percentile response time is {{ $value }} seconds."
+
+  - alert: TooManyActiveRequests
+    expr: rag_active_requests > 100
+    for: 2m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Too many active requests"
+      description: "{{ $value }} active requests currently processing."
+
+  - alert: LowMemory
+    expr: (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes) < 0.1
+    for: 2m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Low memory available"
+      description: "Available memory is below 10%."

@@ -1,0 +1,167 @@
+from database import VectorDatabase, get_database
+from models import DocumentCreate, SearchQuery
+from typing import List, Dict, Any, Optional
+
+class CRUDOperations:
+    def __init__(self, db: VectorDatabase):
+        self.db = db
+    
+    async def create_document(self, document: DocumentCreate) -> Dict[str, Any]:
+        success = self.db.insert_document(
+            doc_id=document.doc_id,
+            text=document.text,
+            metadata=document.metadata
+        )
+        
+        if not success:
+            raise Exception(f"Failed to create document {document.doc_id}")
+        
+        return await self.read_document(document.doc_id)
+    
+    async def read_document(self, doc_id: str) -> Dict[str, Any]:
+        doc_info = self.db.get_document(doc_id)
+        
+        if not doc_info:
+            raise Exception(f"Document {doc_id} not found")
+        
+        return {
+            "doc_id": doc_info["id"],
+            "text": doc_info["document"],
+            "metadata": doc_info["metadata"],
+            "embedding_dimension": doc_info["embedding_dimension"]
+        }
+    
+    async def update_document(self, doc_id: str, document: DocumentCreate) -> Dict[str, Any]:
+        # Check if document exists
+        existing = self.db.get_document(doc_id)
+        if not existing:
+            raise Exception(f"Document {doc_id} not found")
+        
+        # Delete existing document
+        self.db.delete_document(doc_id)
+        
+        # Insert updated document
+        success = self.db.insert_document(
+            doc_id=document.doc_id,
+            text=document.text,
+            metadata=document.metadata
+        )
+        
+        if not success:
+            raise Exception(f"Failed to update document {doc_id}")
+        
+        return await self.read_document(document.doc_id)
+    
+    async def delete_document(self, doc_id: str) -> Dict[str, str]:
+        # Check if document exists
+        existing = self.db.get_document(doc_id)
+        if not existing:
+            raise Exception(f"Document {doc_id} not found")
+        
+        success = self.db.delete_document(doc_id)
+        
+        if not success:
+            raise Exception(f"Failed to delete document {doc_id}")
+        
+        return {"message": f"Document {doc_id} deleted successfully"}
+    
+    async def search_documents(self, search_query: SearchQuery) -> Dict[str, Any]:
+        results = self.db.search_documents(
+            query=search_query.query,
+            n_results=search_query.n_results,
+            metadata_filter=search_query.metadata_filter
+        )
+        
+        formatted_results = []
+        for i, doc_id in enumerate(results["ids"]):
+            doc_result = {
+                "doc_id": doc_id,
+                "text": results["documents"][i],
+                "metadata": results["metadatas"][i] if results["metadatas"] else None,
+                "distance": results["distances"][i] if search_query.include_distances and results["distances"] else None
+            }
+            formatted_results.append(doc_result)
+        
+        return {
+            "query": search_query.query,
+            "results": formatted_results,
+            "total_results": len(formatted_results)
+        }
+    
+    async def list_documents(self, limit: int = 100, offset: int = 0) -> List[Dict[str, Any]]:
+        # ChromaDB doesn't have built-in pagination, so we'll get all and slice
+        try:
+            # Get collection info
+            info = self.db.get_collection_info()
+            total_count = info["document_count"]
+            
+            if offset >= total_count:
+                return []
+            
+            # Get all documents (ChromaDB limitation)
+            all_results = self.db.collection.get(
+                include=["documents", "metadatas"]
+            )
+            
+            # Apply pagination
+            start_idx = offset
+            end_idx = min(offset + limit, len(all_results["ids"]))
+            
+            documents = []
+            for i in range(start_idx, end_idx):
+                doc = {
+                    "doc_id": all_results["ids"][i],
+                    "text": all_results["documents"][i],
+                    "metadata": all_results["metadatas"][i] if all_results["metadatas"] else None
+                }
+                documents.append(doc)
+            
+            return documents
+            
+        except Exception as e:
+            raise Exception(f"Failed to list documents: {str(e)}")
+    
+    async def get_collection_stats(self) -> Dict[str, Any]:
+        info = self.db.get_collection_info()
+        
+        # Get some sample documents to analyze
+        try:
+            sample_results = self.db.collection.get(
+                limit=10,
+                include=["documents", "metadatas", "embeddings"]
+            )
+            
+            avg_doc_length = 0
+            avg_embedding_dim = 0
+            metadata_keys = set()
+            
+            if sample_results["documents"]:
+                avg_doc_length = sum(len(doc) for doc in sample_results["documents"]) / len(sample_results["documents"])
+                
+                if sample_results["embeddings"]:
+                    avg_embedding_dim = len(sample_results["embeddings"][0])
+                
+                if sample_results["metadatas"]:
+                    for metadata in sample_results["metadatas"]:
+                        if metadata:
+                            metadata_keys.update(metadata.keys())
+            
+            return {
+                "collection_name": info["name"],
+                "total_documents": info["document_count"],
+                "average_document_length": round(avg_doc_length, 2),
+                "embedding_dimension": avg_embedding_dim,
+                "metadata_fields": list(metadata_keys),
+                "collection_metadata": info["metadata"]
+            }
+            
+        except Exception as e:
+            return {
+                "collection_name": info["name"],
+                "total_documents": info["document_count"],
+                "error": f"Could not get detailed stats: {str(e)}"
+            }
+
+def get_crud_operations() -> CRUDOperations:
+    db = get_database()
+    return CRUDOperations(db)

@@ -1,0 +1,52 @@
+{
+  "sample_documents": [
+    {
+      "content": "Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to natural intelligence displayed by humans and animals. AI research has been defined as the field of study of intelligent agents, which refers to any system that perceives its environment and takes actions that maximize its chance of achieving its goals.",
+      "source": "wikipedia_ai.html",
+      "score": 0.95,
+      "metadata": {
+        "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "section": "Introduction",
+        "word_count": 45
+      }
+    },
+    {
+      "content": "Machine learning (ML) is a type of artificial intelligence that allows software applications to become more accurate at predicting outcomes without being explicitly programmed to do so. ML algorithms use historical data as input to predict new output values.",
+      "source": "machine_learning_intro.pdf", 
+      "score": 0.89,
+      "metadata": {
+        "page": 1,
+        "chapter": "What is Machine Learning",
+        "word_count": 38
+      }
+    },
+    {
+      "content": "Deep learning is a subset of machine learning in artificial intelligence that has networks capable of learning unsupervised from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural networks.",
+      "source": "deep_learning_basics.pdf",
+      "score": 0.87,
+      "metadata": {
+        "page": 15,
+        "section": "Neural Networks",
+        "word_count": 35
+      }
+    }
+  ],
+
+  "sample_queries": [
+    "What is artificial intelligence?",
+    "How does machine learning work?",
+    "What is the difference between AI and ML?",
+    "Explain deep learning in simple terms",
+    "What are the applications of AI?"
+  ],
+
+  "conversation_examples": [
+    {
+      "turns": [
+        {"role": "user", "content": "What is AI?"},
+        {"role": "assistant", "content": "AI stands for Artificial Intelligence, which is intelligence demonstrated by machines."},
+        {"role": "user", "content": "How is it different from human intelligence?"}
+      ]
+    }
+  ]
+}

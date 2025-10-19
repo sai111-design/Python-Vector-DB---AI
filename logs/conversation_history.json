@@ -1,0 +1,147 @@
+{
+  "pipeline_stats": {
+    "vector_store": {
+      "type": "chromadb",
+      "collection_name": "day12_knowledge_base",
+      "document_count": 6,
+      "embedding_dimension": 384
+    },
+    "queries": {
+      "total_queries": 3,
+      "successful_queries": 3,
+      "average_query_time": 0.02746415138244629,
+      "success_rate": 1.0
+    },
+    "llm": {
+      "provider": "openai",
+      "model": "gpt-3.5-turbo",
+      "use_real_llm": false
+    }
+  },
+  "conversations": [
+    {
+      "query_id": "query_20251003_181343_0",
+      "query_text": "What is artificial intelligence?",
+      "answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. Based on the provided context, machine learning involves algorithms that can identify patterns in data and make predictions or decisions.",
+      "retrieved_documents": [
+        {
+          "id": "ai_overview",
+          "content": "Artificial Intelligence (AI) is a broad field of computer science focused on creating \n            systems that can perform tasks that typically require human intelligence. This includes learning, \n  ...",
+          "metadata": {
+            "category": "overview",
+            "source": "knowledge_base",
+            "topic": "artificial_intelligence"
+          }
+        },
+        {
+          "id": "machine_learning",
+          "content": "Machine Learning (ML) is a subset of artificial intelligence that enables computers \n            to learn and improve from experience without being explicitly programmed. ML algorithms build \n        ...",
+          "metadata": {
+            "category": "definition",
+            "topic": "machine_learning",
+            "source": "knowledge_base"
+          }
+        },
+        {
+          "id": "computer_vision",
+          "content": "Computer Vision is a field of AI that trains computers to interpret and understand \n            the visual world. Using digital images from cameras and videos, computer vision systems can \n           ...",
+          "metadata": {
+            "category": "application",
+            "topic": "computer_vision",
+            "source": "knowledge_base"
+          }
+        }
+      ],
+      "processing_time": 0.035445213317871094,
+      "timestamp": "2025-10-03T18:13:46.700437",
+      "metadata": {
+        "status": "success",
+        "documents_retrieved": 3,
+        "context_length": 1248
+      }
+    },
+    {
+      "query_id": "query_20251003_181344_1",
+      "query_text": "How does machine learning work?",
+      "answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. Based on the provided context, machine learning involves algorithms that can identify patterns in data and make predictions or decisions.",
+      "retrieved_documents": [
+        {
+          "id": "machine_learning",
+          "content": "Machine Learning (ML) is a subset of artificial intelligence that enables computers \n            to learn and improve from experience without being explicitly programmed. ML algorithms build \n        ...",
+          "metadata": {
+            "category": "definition",
+            "topic": "machine_learning",
+            "source": "knowledge_base"
+          }
+        },
+        {
+          "id": "deep_learning",
+          "content": "Deep Learning is a specialized area of machine learning that uses neural networks \n            with multiple layers (hence \"deep\") to model and understand complex patterns in data. It has \n           ...",
+          "metadata": {
+            "topic": "deep_learning",
+            "source": "knowledge_base",
+            "category": "technical"
+          }
+        },
+        {
+          "id": "computer_vision",
+          "content": "Computer Vision is a field of AI that trains computers to interpret and understand \n            the visual world. Using digital images from cameras and videos, computer vision systems can \n           ...",
+          "metadata": {
+            "category": "application",
+            "topic": "computer_vision",
+            "source": "knowledge_base"
+          }
+        }
+      ],
+      "processing_time": 0.024779796600341797,
+      "timestamp": "2025-10-03T18:13:46.700466",
+      "metadata": {
+        "status": "success",
+        "documents_retrieved": 3,
+        "context_length": 1232
+      }
+    },
+    {
+      "query_id": "query_20251003_181345_2",
+      "query_text": "What are the applications of computer vision?",
+      "answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. Based on the provided context, machine learning involves algorithms that can identify patterns in data and make predictions or decisions.",
+      "retrieved_documents": [
+        {
+          "id": "computer_vision",
+          "content": "Computer Vision is a field of AI that trains computers to interpret and understand \n            the visual world. Using digital images from cameras and videos, computer vision systems can \n           ...",
+          "metadata": {
+            "topic": "computer_vision",
+            "category": "application",
+            "source": "knowledge_base"
+          }
+        },
+        {
+          "id": "deep_learning",
+          "content": "Deep Learning is a specialized area of machine learning that uses neural networks \n            with multiple layers (hence \"deep\") to model and understand complex patterns in data. It has \n           ...",
+          "metadata": {
+            "category": "technical",
+            "source": "knowledge_base",
+            "topic": "deep_learning"
+          }
+        },
+        {
+          "id": "machine_learning",
+          "content": "Machine Learning (ML) is a subset of artificial intelligence that enables computers \n            to learn and improve from experience without being explicitly programmed. ML algorithms build \n        ...",
+          "metadata": {
+            "source": "knowledge_base",
+            "topic": "machine_learning",
+            "category": "definition"
+          }
+        }
+      ],
+      "processing_time": 0.022167444229125977,
+      "timestamp": "2025-10-03T18:13:46.700478",
+      "metadata": {
+        "status": "success",
+        "documents_retrieved": 3,
+        "context_length": 1232
+      }
+    }
+  ],
+  "exported_at": "2025-10-03T18:13:46.700485"
+}

@@ -1,0 +1,28 @@
+{
+  "sentences": [
+    "Python is a powerful programming language for data science",
+    "Machine learning algorithms can process vast amounts of data",
+    "Artificial intelligence is transforming modern society",
+    "The weather is beautiful and sunny today",
+    "It's raining heavily outside with thunder and lightning",
+    "Spring brings colorful flowers and fresh green leaves",
+    "I love cooking Italian pasta with fresh tomatoes",
+    "The chocolate cake tastes incredibly sweet and delicious",
+    "Healthy vegetables provide essential vitamins and nutrients",
+    "Playing soccer requires teamwork and physical fitness",
+    "Running in the morning gives me energy for the day",
+    "Swimming is an excellent full-body cardiovascular exercise",
+    "Paris is known for its beautiful architecture and museums",
+    "The mountains offer breathtaking views and fresh air",
+    "Tropical beaches have crystal clear water and white sand",
+    "Reading books expands knowledge and improves vocabulary",
+    "Students learn best through hands-on practical experience",
+    "Online education makes learning accessible to everyone",
+    "Classical music creates a peaceful and relaxing atmosphere",
+    "Modern art expresses creativity through bold colors and shapes"
+  ],
+  "num_sentences": 20,
+  "embedding_dimension": 384,
+  "created_at": "2025-09-22 23:56:24",
+  "model_used": "all-MiniLM-L6-v2"
+}

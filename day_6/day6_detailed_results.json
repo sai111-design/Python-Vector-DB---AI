@@ -1,0 +1,249 @@
+{
+  "faiss_results": {
+    "small": {
+      "IndexFlatL2": {
+        "build_time": 0.00013375282287597656,
+        "search_time": 0.0017023086547851562,
+        "memory_usage": 512000,
+        "accuracy": 1.0,
+        "avg_distance": "267.6693"
+      },
+      "IndexIVFFlat": {
+        "build_time": 0.006709098815917969,
+        "search_time": 0.0004899501800537109,
+        "memory_usage": 512000,
+        "accuracy": 0.9750000000000003,
+        "avg_distance": "267.67596"
+      },
+      "IndexHNSWFlat": {
+        "build_time": 0.009156227111816406,
+        "search_time": 0.00025963783264160156,
+        "memory_usage": 640000,
+        "accuracy": 0.9370000000000003,
+        "avg_distance": "267.93726"
+      }
+    },
+    "medium": {
+      "IndexFlatL2": {
+        "build_time": 0.0028765201568603516,
+        "search_time": 0.006857395172119141,
+        "memory_usage": 10240000,
+        "accuracy": 1.0,
+        "avg_distance": "544.8692"
+      },
+      "IndexIVFFlat": {
+        "build_time": 0.06144380569458008,
+        "search_time": 0.0013532638549804688,
+        "memory_usage": 10240000,
+        "accuracy": 0.893,
+        "avg_distance": "545.8408"
+      },
+      "IndexHNSWFlat": {
+        "build_time": 0.25327515602111816,
+        "search_time": 0.0011222362518310547,
+        "memory_usage": 11520000,
+        "accuracy": 0.7519999999999999,
+        "avg_distance": "550.6749"
+      }
+    },
+    "large": {
+      "IndexFlatL2": {
+        "build_time": 0.023105621337890625,
+        "search_time": 0.02383899688720703,
+        "memory_usage": 76800000,
+        "accuracy": 1.0,
+        "avg_distance": "869.6079"
+      },
+      "IndexIVFFlat": {
+        "build_time": 0.27742791175842285,
+        "search_time": 0.01734137535095215,
+        "memory_usage": 76800000,
+        "accuracy": 0.871,
+        "avg_distance": "871.10406"
+      },
+      "IndexHNSWFlat": {
+        "build_time": 11.953155755996704,
+        "search_time": 0.003643035888671875,
+        "memory_usage": 83200000,
+        "accuracy": 0.4850000000000001,
+        "avg_distance": "894.75464"
+      }
+    }
+  },
+  "hnswlib_results": {
+    "small": {
+      "Balanced": {
+        "build_time": 0.021684885025024414,
+        "search_time": 0.00382232666015625,
+        "memory_usage": 640000,
+        "avg_distance": "299.1048",
+        "parameters": {
+          "M": 16,
+          "ef_construction": 200,
+          "ef": 50
+        }
+      },
+      "High_Accuracy": {
+        "build_time": 0.03619647026062012,
+        "search_time": 0.00795602798461914,
+        "memory_usage": 640000,
+        "avg_distance": "298.94525",
+        "parameters": {
+          "M": 32,
+          "ef_construction": 400,
+          "ef": 100
+        }
+      },
+      "Fast_Build": {
+        "build_time": 0.0180051326751709,
+        "search_time": 0.002062082290649414,
+        "memory_usage": 640000,
+        "avg_distance": "299.78424",
+        "parameters": {
+          "M": 8,
+          "ef_construction": 100,
+          "ef": 25
+        }
+      }
+    },
+    "medium": {
+      "Balanced": {
+        "build_time": 0.4822988510131836,
+        "search_time": 0.014281272888183594,
+        "memory_usage": 11520000,
+        "avg_distance": "608.78143",
+        "parameters": {
+          "M": 16,
+          "ef_construction": 200,
+          "ef": 50
+        }
+      },
+      "High_Accuracy": {
+        "build_time": 0.7150359153747559,
+        "search_time": 0.01666736602783203,
+        "memory_usage": 11520000,
+        "avg_distance": "599.98035",
+        "parameters": {
+          "M": 32,
+          "ef_construction": 400,
+          "ef": 100
+        }
+      },
+      "Fast_Build": {
+        "build_time": 0.2823524475097656,
+        "search_time": 0.0049474239349365234,
+        "memory_usage": 11520000,
+        "avg_distance": "607.67615",
+        "parameters": {
+          "M": 8,
+          "ef_construction": 100,
+          "ef": 25
+        }
+      }
+    },
+    "large": {
+      "Balanced": {
+        "build_time": 6.055517196655273,
+        "search_time": 0.02536749839782715,
+        "memory_usage": 83200000,
+        "avg_distance": "963.2989",
+        "parameters": {
+          "M": 16,
+          "ef_construction": 200,
+          "ef": 50
+        }
+      },
+      "High_Accuracy": {
+        "build_time": 9.79573106765747,
+        "search_time": 0.06507563591003418,
+        "memory_usage": 83200000,
+        "avg_distance": "952.43036",
+        "parameters": {
+          "M": 32,
+          "ef_construction": 400,
+          "ef": 100
+        }
+      },
+      "Fast_Build": {
+        "build_time": 2.7095680236816406,
+        "search_time": 0.00814676284790039,
+        "memory_usage": 83200000,
+        "avg_distance": "977.18463",
+        "parameters": {
+          "M": 8,
+          "ef_construction": 100,
+          "ef": 25
+        }
+      }
+    }
+  },
+  "recommendations": {
+    "small": {
+      "fastest_build": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "time": 0.00013375282287597656
+      },
+      "fastest_search": {
+        "library": "FAISS",
+        "method": "IndexHNSWFlat",
+        "time": 0.00025963783264160156
+      },
+      "best_accuracy": {
+        "library": "N/A",
+        "method": "N/A",
+        "accuracy": "N/A"
+      },
+      "most_memory_efficient": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "memory_mb": 0.48828125
+      }
+    },
+    "medium": {
+      "fastest_build": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "time": 0.0028765201568603516
+      },
+      "fastest_search": {
+        "library": "FAISS",
+        "method": "IndexHNSWFlat",
+        "time": 0.0011222362518310547
+      },
+      "best_accuracy": {
+        "library": "N/A",
+        "method": "N/A",
+        "accuracy": "N/A"
+      },
+      "most_memory_efficient": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "memory_mb": 9.765625
+      }
+    },
+    "large": {
+      "fastest_build": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "time": 0.023105621337890625
+      },
+      "fastest_search": {
+        "library": "FAISS",
+        "method": "IndexHNSWFlat",
+        "time": 0.003643035888671875
+      },
+      "best_accuracy": {
+        "library": "N/A",
+        "method": "N/A",
+        "accuracy": "N/A"
+      },
+      "most_memory_efficient": {
+        "library": "FAISS",
+        "method": "IndexFlatL2",
+        "memory_mb": 73.2421875
+      }
+    }
+  },
+  "timestamp": "2025-09-23 00:22:14"
+}

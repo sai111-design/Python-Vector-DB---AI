@@ -1,0 +1,191 @@
+sentence_1_id,sentence_2_id,sentence_1,sentence_2,cosine_similarity
+16,17,Students learn best through hands-on practical experience,Online education makes learning accessible to everyone,0.49810806
+3,4,The weather is beautiful and sunny today,It's raining heavily outside with thunder and lightning,0.42592117
+3,13,The weather is beautiful and sunny today,The mountains offer breathtaking views and fresh air,0.4192341
+1,2,Machine learning algorithms can process vast amounts of data,Artificial intelligence is transforming modern society,0.38001662
+15,17,Reading books expands knowledge and improves vocabulary,Online education makes learning accessible to everyone,0.370744
+3,5,The weather is beautiful and sunny today,Spring brings colorful flowers and fresh green leaves,0.3396163
+15,16,Reading books expands knowledge and improves vocabulary,Students learn best through hands-on practical experience,0.32256743
+13,18,The mountains offer breathtaking views and fresh air,Classical music creates a peaceful and relaxing atmosphere,0.3171211
+10,11,Running in the morning gives me energy for the day,Swimming is an excellent full-body cardiovascular exercise,0.30904955
+3,14,The weather is beautiful and sunny today,Tropical beaches have crystal clear water and white sand,0.2969714
+3,10,The weather is beautiful and sunny today,Running in the morning gives me energy for the day,0.29204342
+13,14,The mountains offer breathtaking views and fresh air,Tropical beaches have crystal clear water and white sand,0.28951484
+9,11,Playing soccer requires teamwork and physical fitness,Swimming is an excellent full-body cardiovascular exercise,0.28668082
+5,19,Spring brings colorful flowers and fresh green leaves,Modern art expresses creativity through bold colors and shapes,0.28664723
+6,8,I love cooking Italian pasta with fresh tomatoes,Healthy vegetables provide essential vitamins and nutrients,0.28630212
+0,1,Python is a powerful programming language for data science,Machine learning algorithms can process vast amounts of data,0.28528178
+4,5,It's raining heavily outside with thunder and lightning,Spring brings colorful flowers and fresh green leaves,0.27840507
+12,19,Paris is known for its beautiful architecture and museums,Modern art expresses creativity through bold colors and shapes,0.27703977
+5,13,Spring brings colorful flowers and fresh green leaves,The mountains offer breathtaking views and fresh air,0.27570346
+3,18,The weather is beautiful and sunny today,Classical music creates a peaceful and relaxing atmosphere,0.2698427
+4,13,It's raining heavily outside with thunder and lightning,The mountains offer breathtaking views and fresh air,0.24345386
+2,17,Artificial intelligence is transforming modern society,Online education makes learning accessible to everyone,0.23844631
+0,2,Python is a powerful programming language for data science,Artificial intelligence is transforming modern society,0.23667628
+10,18,Running in the morning gives me energy for the day,Classical music creates a peaceful and relaxing atmosphere,0.2314265
+2,19,Artificial intelligence is transforming modern society,Modern art expresses creativity through bold colors and shapes,0.22931053
+7,13,The chocolate cake tastes incredibly sweet and delicious,The mountains offer breathtaking views and fresh air,0.2271588
+11,14,Swimming is an excellent full-body cardiovascular exercise,Tropical beaches have crystal clear water and white sand,0.21236786
+5,6,Spring brings colorful flowers and fresh green leaves,I love cooking Italian pasta with fresh tomatoes,0.20823681
+5,8,Spring brings colorful flowers and fresh green leaves,Healthy vegetables provide essential vitamins and nutrients,0.20621875
+7,19,The chocolate cake tastes incredibly sweet and delicious,Modern art expresses creativity through bold colors and shapes,0.20573045
+18,19,Classical music creates a peaceful and relaxing atmosphere,Modern art expresses creativity through bold colors and shapes,0.20460287
+5,14,Spring brings colorful flowers and fresh green leaves,Tropical beaches have crystal clear water and white sand,0.18946888
+7,18,The chocolate cake tastes incredibly sweet and delicious,Classical music creates a peaceful and relaxing atmosphere,0.18853422
+12,13,Paris is known for its beautiful architecture and museums,The mountains offer breathtaking views and fresh air,0.18336776
+4,18,It's raining heavily outside with thunder and lightning,Classical music creates a peaceful and relaxing atmosphere,0.18333496
+11,13,Swimming is an excellent full-body cardiovascular exercise,The mountains offer breathtaking views and fresh air,0.17937659
+3,11,The weather is beautiful and sunny today,Swimming is an excellent full-body cardiovascular exercise,0.17823213
+12,18,Paris is known for its beautiful architecture and museums,Classical music creates a peaceful and relaxing atmosphere,0.17165497
+5,10,Spring brings colorful flowers and fresh green leaves,Running in the morning gives me energy for the day,0.16637386
+6,18,I love cooking Italian pasta with fresh tomatoes,Classical music creates a peaceful and relaxing atmosphere,0.1659227
+16,19,Students learn best through hands-on practical experience,Modern art expresses creativity through bold colors and shapes,0.16579334
+2,16,Artificial intelligence is transforming modern society,Students learn best through hands-on practical experience,0.16477652
+13,19,The mountains offer breathtaking views and fresh air,Modern art expresses creativity through bold colors and shapes,0.16316232
+9,10,Playing soccer requires teamwork and physical fitness,Running in the morning gives me energy for the day,0.16169181
+2,15,Artificial intelligence is transforming modern society,Reading books expands knowledge and improves vocabulary,0.15881774
+3,12,The weather is beautiful and sunny today,Paris is known for its beautiful architecture and museums,0.15834518
+3,7,The weather is beautiful and sunny today,The chocolate cake tastes incredibly sweet and delicious,0.15511139
+1,16,Machine learning algorithms can process vast amounts of data,Students learn best through hands-on practical experience,0.15281536
+0,11,Python is a powerful programming language for data science,Swimming is an excellent full-body cardiovascular exercise,0.14757212
+3,19,The weather is beautiful and sunny today,Modern art expresses creativity through bold colors and shapes,0.14649019
+11,18,Swimming is an excellent full-body cardiovascular exercise,Classical music creates a peaceful and relaxing atmosphere,0.142491
+3,6,The weather is beautiful and sunny today,I love cooking Italian pasta with fresh tomatoes,0.13936263
+4,10,It's raining heavily outside with thunder and lightning,Running in the morning gives me energy for the day,0.13884296
+6,11,I love cooking Italian pasta with fresh tomatoes,Swimming is an excellent full-body cardiovascular exercise,0.1382513
+1,12,Machine learning algorithms can process vast amounts of data,Paris is known for its beautiful architecture and museums,0.13780221
+8,13,Healthy vegetables provide essential vitamins and nutrients,The mountains offer breathtaking views and fresh air,0.13758658
+15,19,Reading books expands knowledge and improves vocabulary,Modern art expresses creativity through bold colors and shapes,0.13707595
+5,18,Spring brings colorful flowers and fresh green leaves,Classical music creates a peaceful and relaxing atmosphere,0.13598636
+8,15,Healthy vegetables provide essential vitamins and nutrients,Reading books expands knowledge and improves vocabulary,0.13385178
+10,13,Running in the morning gives me energy for the day,The mountains offer breathtaking views and fresh air,0.13274327
+13,15,The mountains offer breathtaking views and fresh air,Reading books expands knowledge and improves vocabulary,0.13069102
+9,16,Playing soccer requires teamwork and physical fitness,Students learn best through hands-on practical experience,0.13038021
+5,7,Spring brings colorful flowers and fresh green leaves,The chocolate cake tastes incredibly sweet and delicious,0.12997434
+7,12,The chocolate cake tastes incredibly sweet and delicious,Paris is known for its beautiful architecture and museums,0.12856184
+0,6,Python is a powerful programming language for data science,I love cooking Italian pasta with fresh tomatoes,0.12711088
+1,15,Machine learning algorithms can process vast amounts of data,Reading books expands knowledge and improves vocabulary,0.12690738
+13,16,The mountains offer breathtaking views and fresh air,Students learn best through hands-on practical experience,0.1264753
+3,8,The weather is beautiful and sunny today,Healthy vegetables provide essential vitamins and nutrients,0.12478962
+2,7,Artificial intelligence is transforming modern society,The chocolate cake tastes incredibly sweet and delicious,0.124315746
+14,19,Tropical beaches have crystal clear water and white sand,Modern art expresses creativity through bold colors and shapes,0.124208346
+1,17,Machine learning algorithms can process vast amounts of data,Online education makes learning accessible to everyone,0.12148431
+6,13,I love cooking Italian pasta with fresh tomatoes,The mountains offer breathtaking views and fresh air,0.1211546
+11,16,Swimming is an excellent full-body cardiovascular exercise,Students learn best through hands-on practical experience,0.12005661
+12,14,Paris is known for its beautiful architecture and museums,Tropical beaches have crystal clear water and white sand,0.118254855
+9,15,Playing soccer requires teamwork and physical fitness,Reading books expands knowledge and improves vocabulary,0.11816274
+6,7,I love cooking Italian pasta with fresh tomatoes,The chocolate cake tastes incredibly sweet and delicious,0.11504981
+5,15,Spring brings colorful flowers and fresh green leaves,Reading books expands knowledge and improves vocabulary,0.11503067
+1,7,Machine learning algorithms can process vast amounts of data,The chocolate cake tastes incredibly sweet and delicious,0.11322265
+8,10,Healthy vegetables provide essential vitamins and nutrients,Running in the morning gives me energy for the day,0.10916481
+5,11,Spring brings colorful flowers and fresh green leaves,Swimming is an excellent full-body cardiovascular exercise,0.10570516
+2,9,Artificial intelligence is transforming modern society,Playing soccer requires teamwork and physical fitness,0.10457607
+4,14,It's raining heavily outside with thunder and lightning,Tropical beaches have crystal clear water and white sand,0.10375979
+2,12,Artificial intelligence is transforming modern society,Paris is known for its beautiful architecture and museums,0.103546314
+9,14,Playing soccer requires teamwork and physical fitness,Tropical beaches have crystal clear water and white sand,0.102845415
+0,17,Python is a powerful programming language for data science,Online education makes learning accessible to everyone,0.1004654
+8,11,Healthy vegetables provide essential vitamins and nutrients,Swimming is an excellent full-body cardiovascular exercise,0.098487124
+0,16,Python is a powerful programming language for data science,Students learn best through hands-on practical experience,0.09537632
+11,15,Swimming is an excellent full-body cardiovascular exercise,Reading books expands knowledge and improves vocabulary,0.09509092
+1,4,Machine learning algorithms can process vast amounts of data,It's raining heavily outside with thunder and lightning,0.09192703
+8,9,Healthy vegetables provide essential vitamins and nutrients,Playing soccer requires teamwork and physical fitness,0.08999921
+8,17,Healthy vegetables provide essential vitamins and nutrients,Online education makes learning accessible to everyone,0.089599065
+9,19,Playing soccer requires teamwork and physical fitness,Modern art expresses creativity through bold colors and shapes,0.085820764
+2,3,Artificial intelligence is transforming modern society,The weather is beautiful and sunny today,0.08518499
+9,18,Playing soccer requires teamwork and physical fitness,Classical music creates a peaceful and relaxing atmosphere,0.084307775
+17,19,Online education makes learning accessible to everyone,Modern art expresses creativity through bold colors and shapes,0.08430403
+10,15,Running in the morning gives me energy for the day,Reading books expands knowledge and improves vocabulary,0.08418118
+8,14,Healthy vegetables provide essential vitamins and nutrients,Tropical beaches have crystal clear water and white sand,0.08250513
+6,10,I love cooking Italian pasta with fresh tomatoes,Running in the morning gives me energy for the day,0.08171585
+6,12,I love cooking Italian pasta with fresh tomatoes,Paris is known for its beautiful architecture and museums,0.0812009
+6,19,I love cooking Italian pasta with fresh tomatoes,Modern art expresses creativity through bold colors and shapes,0.080157235
+1,19,Machine learning algorithms can process vast amounts of data,Modern art expresses creativity through bold colors and shapes,0.07985323
+12,15,Paris is known for its beautiful architecture and museums,Reading books expands knowledge and improves vocabulary,0.07966864
+4,11,It's raining heavily outside with thunder and lightning,Swimming is an excellent full-body cardiovascular exercise,0.078999765
+9,17,Playing soccer requires teamwork and physical fitness,Online education makes learning accessible to everyone,0.07724492
+2,18,Artificial intelligence is transforming modern society,Classical music creates a peaceful and relaxing atmosphere,0.076260805
+0,9,Python is a powerful programming language for data science,Playing soccer requires teamwork and physical fitness,0.07355265
+1,13,Machine learning algorithms can process vast amounts of data,The mountains offer breathtaking views and fresh air,0.07271976
+5,12,Spring brings colorful flowers and fresh green leaves,Paris is known for its beautiful architecture and museums,0.07216816
+6,16,I love cooking Italian pasta with fresh tomatoes,Students learn best through hands-on practical experience,0.07147786
+0,3,Python is a powerful programming language for data science,The weather is beautiful and sunny today,0.071106344
+7,16,The chocolate cake tastes incredibly sweet and delicious,Students learn best through hands-on practical experience,0.0696128
+7,10,The chocolate cake tastes incredibly sweet and delicious,Running in the morning gives me energy for the day,0.0689966
+1,11,Machine learning algorithms can process vast amounts of data,Swimming is an excellent full-body cardiovascular exercise,0.06867674
+1,3,Machine learning algorithms can process vast amounts of data,The weather is beautiful and sunny today,0.06865486
+7,11,The chocolate cake tastes incredibly sweet and delicious,Swimming is an excellent full-body cardiovascular exercise,0.06763298
+2,6,Artificial intelligence is transforming modern society,I love cooking Italian pasta with fresh tomatoes,0.06555684
+14,18,Tropical beaches have crystal clear water and white sand,Classical music creates a peaceful and relaxing atmosphere,0.06274106
+10,19,Running in the morning gives me energy for the day,Modern art expresses creativity through bold colors and shapes,0.062106002
+1,14,Machine learning algorithms can process vast amounts of data,Tropical beaches have crystal clear water and white sand,0.05853708
+7,14,The chocolate cake tastes incredibly sweet and delicious,Tropical beaches have crystal clear water and white sand,0.057074137
+0,15,Python is a powerful programming language for data science,Reading books expands knowledge and improves vocabulary,0.056047548
+8,16,Healthy vegetables provide essential vitamins and nutrients,Students learn best through hands-on practical experience,0.0549909
+16,18,Students learn best through hands-on practical experience,Classical music creates a peaceful and relaxing atmosphere,0.052947532
+11,19,Swimming is an excellent full-body cardiovascular exercise,Modern art expresses creativity through bold colors and shapes,0.051887568
+4,15,It's raining heavily outside with thunder and lightning,Reading books expands knowledge and improves vocabulary,0.050000325
+4,19,It's raining heavily outside with thunder and lightning,Modern art expresses creativity through bold colors and shapes,0.047856927
+14,15,Tropical beaches have crystal clear water and white sand,Reading books expands knowledge and improves vocabulary,0.047744986
+1,5,Machine learning algorithms can process vast amounts of data,Spring brings colorful flowers and fresh green leaves,0.04757342
+11,12,Swimming is an excellent full-body cardiovascular exercise,Paris is known for its beautiful architecture and museums,0.04730777
+4,12,It's raining heavily outside with thunder and lightning,Paris is known for its beautiful architecture and museums,0.046826426
+3,15,The weather is beautiful and sunny today,Reading books expands knowledge and improves vocabulary,0.04181271
+4,7,It's raining heavily outside with thunder and lightning,The chocolate cake tastes incredibly sweet and delicious,0.040633887
+4,6,It's raining heavily outside with thunder and lightning,I love cooking Italian pasta with fresh tomatoes,0.038722936
+0,5,Python is a powerful programming language for data science,Spring brings colorful flowers and fresh green leaves,0.037882265
+12,17,Paris is known for its beautiful architecture and museums,Online education makes learning accessible to everyone,0.037119467
+8,18,Healthy vegetables provide essential vitamins and nutrients,Classical music creates a peaceful and relaxing atmosphere,0.036031842
+5,16,Spring brings colorful flowers and fresh green leaves,Students learn best through hands-on practical experience,0.03420556
+7,8,The chocolate cake tastes incredibly sweet and delicious,Healthy vegetables provide essential vitamins and nutrients,0.033199638
+0,4,Python is a powerful programming language for data science,It's raining heavily outside with thunder and lightning,0.033033226
+10,14,Running in the morning gives me energy for the day,Tropical beaches have crystal clear water and white sand,0.031368088
+15,18,Reading books expands knowledge and improves vocabulary,Classical music creates a peaceful and relaxing atmosphere,0.031089157
+6,14,I love cooking Italian pasta with fresh tomatoes,Tropical beaches have crystal clear water and white sand,0.031004202
+9,12,Playing soccer requires teamwork and physical fitness,Paris is known for its beautiful architecture and museums,0.030161776
+2,4,Artificial intelligence is transforming modern society,It's raining heavily outside with thunder and lightning,0.029740354
+1,10,Machine learning algorithms can process vast amounts of data,Running in the morning gives me energy for the day,0.029587721
+12,16,Paris is known for its beautiful architecture and museums,Students learn best through hands-on practical experience,0.027323123
+5,9,Spring brings colorful flowers and fresh green leaves,Playing soccer requires teamwork and physical fitness,0.026137954
+9,13,Playing soccer requires teamwork and physical fitness,The mountains offer breathtaking views and fresh air,0.024731845
+6,15,I love cooking Italian pasta with fresh tomatoes,Reading books expands knowledge and improves vocabulary,0.022704236
+11,17,Swimming is an excellent full-body cardiovascular exercise,Online education makes learning accessible to everyone,0.02149503
+1,9,Machine learning algorithms can process vast amounts of data,Playing soccer requires teamwork and physical fitness,0.021009974
+0,8,Python is a powerful programming language for data science,Healthy vegetables provide essential vitamins and nutrients,0.019778937
+2,11,Artificial intelligence is transforming modern society,Swimming is an excellent full-body cardiovascular exercise,0.019661885
+4,16,It's raining heavily outside with thunder and lightning,Students learn best through hands-on practical experience,0.019058969
+1,18,Machine learning algorithms can process vast amounts of data,Classical music creates a peaceful and relaxing atmosphere,0.017512895
+0,13,Python is a powerful programming language for data science,The mountains offer breathtaking views and fresh air,0.017069781
+7,17,The chocolate cake tastes incredibly sweet and delicious,Online education makes learning accessible to everyone,0.016683713
+1,6,Machine learning algorithms can process vast amounts of data,I love cooking Italian pasta with fresh tomatoes,0.015975833
+0,19,Python is a powerful programming language for data science,Modern art expresses creativity through bold colors and shapes,0.014401287
+0,10,Python is a powerful programming language for data science,Running in the morning gives me energy for the day,0.013344377
+10,12,Running in the morning gives me energy for the day,Paris is known for its beautiful architecture and museums,0.013115036
+10,17,Running in the morning gives me energy for the day,Online education makes learning accessible to everyone,0.012257411
+2,10,Artificial intelligence is transforming modern society,Running in the morning gives me energy for the day,0.010544793
+4,17,It's raining heavily outside with thunder and lightning,Online education makes learning accessible to everyone,0.007630146
+6,9,I love cooking Italian pasta with fresh tomatoes,Playing soccer requires teamwork and physical fitness,0.0048035807
+17,18,Online education makes learning accessible to everyone,Classical music creates a peaceful and relaxing atmosphere,0.0045179403
+10,16,Running in the morning gives me energy for the day,Students learn best through hands-on practical experience,0.0016183704
+14,16,Tropical beaches have crystal clear water and white sand,Students learn best through hands-on practical experience,0.0011348297
+8,19,Healthy vegetables provide essential vitamins and nutrients,Modern art expresses creativity through bold colors and shapes,0.0006757199
+7,15,The chocolate cake tastes incredibly sweet and delicious,Reading books expands knowledge and improves vocabulary,-0.00055573584
+0,12,Python is a powerful programming language for data science,Paris is known for its beautiful architecture and museums,-0.0011487951
+3,9,The weather is beautiful and sunny today,Playing soccer requires teamwork and physical fitness,-0.001999531
+3,17,The weather is beautiful and sunny today,Online education makes learning accessible to everyone,-0.0064150626
+3,16,The weather is beautiful and sunny today,Students learn best through hands-on practical experience,-0.011947804
+0,18,Python is a powerful programming language for data science,Classical music creates a peaceful and relaxing atmosphere,-0.013052615
+5,17,Spring brings colorful flowers and fresh green leaves,Online education makes learning accessible to everyone,-0.013312031
+7,9,The chocolate cake tastes incredibly sweet and delicious,Playing soccer requires teamwork and physical fitness,-0.014026371
+4,9,It's raining heavily outside with thunder and lightning,Playing soccer requires teamwork and physical fitness,-0.014081872
+13,17,The mountains offer breathtaking views and fresh air,Online education makes learning accessible to everyone,-0.015272074
+4,8,It's raining heavily outside with thunder and lightning,Healthy vegetables provide essential vitamins and nutrients,-0.01783662
+6,17,I love cooking Italian pasta with fresh tomatoes,Online education makes learning accessible to everyone,-0.02018861
+0,7,Python is a powerful programming language for data science,The chocolate cake tastes incredibly sweet and delicious,-0.02182343
+2,8,Artificial intelligence is transforming modern society,Healthy vegetables provide essential vitamins and nutrients,-0.025347613
+8,12,Healthy vegetables provide essential vitamins and nutrients,Paris is known for its beautiful architecture and museums,-0.029788245
+1,8,Machine learning algorithms can process vast amounts of data,Healthy vegetables provide essential vitamins and nutrients,-0.0320707
+2,14,Artificial intelligence is transforming modern society,Tropical beaches have crystal clear water and white sand,-0.036768224
+14,17,Tropical beaches have crystal clear water and white sand,Online education makes learning accessible to everyone,-0.040426653
+0,14,Python is a powerful programming language for data science,Tropical beaches have crystal clear water and white sand,-0.0487387
+2,13,Artificial intelligence is transforming modern society,The mountains offer breathtaking views and fresh air,-0.053309157
+2,5,Artificial intelligence is transforming modern society,Spring brings colorful flowers and fresh green leaves,-0.06312674

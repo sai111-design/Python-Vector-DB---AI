@@ -1,0 +1,201 @@
+# Day 14 - Kubernetes Deployment for RAG Pipeline
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rag-pipeline-api
+  labels:
+    app: rag-pipeline
+    component: api
+    version: v1.0.0
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: rag-pipeline
+      component: api
+  template:
+    metadata:
+      labels:
+        app: rag-pipeline
+        component: api
+    spec:
+      containers:
+      - name: rag-api
+        image: rag-pipeline:latest
+        ports:
+        - containerPort: 8000
+          name: http
+        env:
+        - name: APP_ENV
+          value: "production"
+        - name: LOG_LEVEL
+          value: "INFO"
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: rag-secrets
+              key: openai-api-key
+        - name: WORKERS
+          value: "2"
+        - name: MAX_WORKERS
+          value: "4"
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /health/live
+            port: 8000
+          initialDelaySeconds: 60
+          periodSeconds: 30
+          timeoutSeconds: 10
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        volumeMounts:
+        - name: rag-data
+          mountPath: /app/data
+        - name: rag-logs
+          mountPath: /app/logs
+        - name: config-volume
+          mountPath: /app/configs
+          readOnly: true
+      volumes:
+      - name: rag-data
+        persistentVolumeClaim:
+          claimName: rag-data-pvc
+      - name: rag-logs
+        emptyDir: {}
+      - name: config-volume
+        configMap:
+          name: rag-config
+      nodeSelector:
+        kubernetes.io/os: linux
+      tolerations:
+      - key: "app"
+        operator: "Equal"
+        value: "rag-pipeline"
+        effect: "NoSchedule"
+
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: rag-pipeline-service
+  labels:
+    app: rag-pipeline
+    component: api
+spec:
+  selector:
+    app: rag-pipeline
+    component: api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
+    protocol: TCP
+  type: ClusterIP
+
+---
+# Horizontal Pod Autoscaler
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: rag-pipeline-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: rag-pipeline-api
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Percent
+        value: 100
+        periodSeconds: 15
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 10
+        periodSeconds: 60
+
+---
+# PersistentVolumeClaim for data
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rag-data-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: fast-ssd
+
+---
+# ConfigMap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rag-config
+data:
+  app.conf: |
+    [app]
+    environment=production
+    debug=false
+
+    [rag]
+    max_context_length=4000
+    max_retrieval_results=10
+    collection_name=production_kb
+
+    [models]
+    embedding_model=all-MiniLM-L6-v2
+    llm_provider=openai
+    llm_model=gpt-3.5-turbo
+
+---
+# Secret (create manually with actual values)
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rag-secrets
+type: Opaque
+stringData:
+  openai-api-key: "your-openai-api-key-here"
+  postgres-password: "your-postgres-password"
+  redis-password: "your-redis-password"

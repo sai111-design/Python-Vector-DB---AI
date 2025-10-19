@@ -1,0 +1,151 @@
+{
+  "evaluation_summary": {
+    "total_queries": 4,
+    "total_documents": 7,
+    "evaluation_timestamp": "2025-10-03T17:49:06.266630",
+    "k_values_evaluated": [
+      1,
+      3,
+      5,
+      10
+    ]
+  },
+  "metrics_by_k": {
+    "1": {
+      "precision": 1.0,
+      "recall": 0.7083333333333333,
+      "f1": 0.7916666666666666,
+      "map": 0.9375,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "hit_rate": 1.0
+    },
+    "3": {
+      "precision": 0.49999999999999994,
+      "recall": 0.9166666666666666,
+      "f1": 0.6166666666666667,
+      "map": 0.9375,
+      "mrr": 1.0,
+      "ndcg": 0.9212703565342023,
+      "hit_rate": 1.0
+    },
+    "5": {
+      "precision": 0.35000000000000003,
+      "recall": 1.0,
+      "f1": 0.49702380952380953,
+      "map": 0.9375,
+      "mrr": 1.0,
+      "ndcg": 0.9717971931593392,
+      "hit_rate": 1.0
+    },
+    "10": {
+      "precision": 0.35000000000000003,
+      "recall": 1.0,
+      "f1": 0.49702380952380953,
+      "map": 0.9375,
+      "mrr": 1.0,
+      "ndcg": 0.9717971931593392,
+      "hit_rate": 1.0
+    }
+  },
+  "per_query_analysis": {
+    "query_1": {
+      "k_5": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "ap": 0.8333333333333333,
+        "rr": 1.0,
+        "ndcg": 0.9197207891481876,
+        "hit_rate": 1.0
+      },
+      "k_10": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.5714285714285715,
+        "ap": 0.8333333333333333,
+        "rr": 1.0,
+        "ndcg": 0.9197207891481876,
+        "hit_rate": 1.0
+      },
+      "query_text": "What is machine learning?",
+      "relevant_docs_count": 2,
+      "retrieval_time": 0.045
+    },
+    "query_2": {
+      "k_5": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "ap": 1.0,
+        "rr": 1.0,
+        "ndcg": 1.0,
+        "hit_rate": 1.0
+      },
+      "k_10": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "ap": 1.0,
+        "rr": 1.0,
+        "ndcg": 1.0,
+        "hit_rate": 1.0
+      },
+      "query_text": "How does deep learning work?",
+      "relevant_docs_count": 1,
+      "retrieval_time": 0.038
+    },
+    "query_3": {
+      "k_5": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "ap": 0.9166666666666666,
+        "rr": 1.0,
+        "ndcg": 0.9674679834891693,
+        "hit_rate": 1.0
+      },
+      "k_10": {
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.7499999999999999,
+        "ap": 0.9166666666666666,
+        "rr": 1.0,
+        "ndcg": 0.9674679834891693,
+        "hit_rate": 1.0
+      },
+      "query_text": "What are the types of machine learning?",
+      "relevant_docs_count": 3,
+      "retrieval_time": 0.052
+    },
+    "query_4": {
+      "k_5": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "ap": 1.0,
+        "rr": 1.0,
+        "ndcg": 1.0,
+        "hit_rate": 1.0
+      },
+      "k_10": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.33333333333333337,
+        "ap": 1.0,
+        "rr": 1.0,
+        "ndcg": 1.0,
+        "hit_rate": 1.0
+      },
+      "query_text": "Explain natural language processing",
+      "relevant_docs_count": 1,
+      "retrieval_time": 0.041
+    }
+  },
+  "system_statistics": {
+    "average_retrieval_time": 0.044,
+    "median_retrieval_time": 0.043,
+    "total_retrieval_time": 0.176,
+    "queries_per_second": 22.72727272727273
+  }
+}

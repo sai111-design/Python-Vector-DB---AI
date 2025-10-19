@@ -1,0 +1,8 @@
+# Day 11 - Prompt Engineering Requirements
+# No external dependencies required - uses only Python standard library
+
+# Optional dependencies for enhanced functionality:
+# pyyaml>=6.0        # For YAML template files  
+# jinja2>=3.0        # For advanced template features
+# tiktoken>=0.4.0    # For token counting
+# openai>=1.0        # For LLM integration testing

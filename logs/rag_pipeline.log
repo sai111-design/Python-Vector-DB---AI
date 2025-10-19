@@ -1,0 +1,23 @@
+2025-10-03 18:13:37,790 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-10-03 18:13:37,790 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-10-03 18:13:42,918 - chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-10-03 18:13:43,261 - __main__ - INFO - Connected to ChromaDB collection: day12_knowledge_base
+2025-10-03 18:13:43,261 - __main__ - INFO - Using mock LLM responses
+2025-10-03 18:13:43,261 - __main__ - INFO - RAG Pipeline initialized successfully
+2025-10-03 18:13:43,406 - __main__ - INFO - Added document: ai_overview
+2025-10-03 18:13:43,438 - __main__ - INFO - Added document: machine_learning
+2025-10-03 18:13:43,471 - __main__ - INFO - Added document: deep_learning
+2025-10-03 18:13:43,505 - __main__ - INFO - Added document: nlp_fundamentals
+2025-10-03 18:13:43,538 - __main__ - INFO - Added document: computer_vision
+2025-10-03 18:13:43,572 - __main__ - INFO - Added document: rag_systems
+2025-10-03 18:13:43,572 - __main__ - INFO - Added 6/6 documents in 0.311s
+2025-10-03 18:13:43,577 - __main__ - INFO - Processing query: What is artificial intelligence?
+2025-10-03 18:13:43,612 - __main__ - INFO - Retrieved 3 documents for query
+2025-10-03 18:13:43,612 - __main__ - INFO - Query processed successfully in 0.035s
+2025-10-03 18:13:44,631 - __main__ - INFO - Processing query: How does machine learning work?
+2025-10-03 18:13:44,655 - __main__ - INFO - Retrieved 3 documents for query
+2025-10-03 18:13:44,655 - __main__ - INFO - Query processed successfully in 0.025s
+2025-10-03 18:13:45,667 - __main__ - INFO - Processing query: What are the applications of computer vision?
+2025-10-03 18:13:45,688 - __main__ - INFO - Retrieved 3 documents for query
+2025-10-03 18:13:45,689 - __main__ - INFO - Query processed successfully in 0.022s
+2025-10-03 18:13:46,702 - __main__ - INFO - Conversation history saved to logs\conversation_history.json

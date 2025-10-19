@@ -1,0 +1,42 @@
+{
+  "prompt_engineering": {
+    "default_max_context_length": 4000,
+    "truncation_strategies": ["end", "middle", "smart"],
+    "default_truncation": "smart",
+    "include_sources_by_default": true,
+    "max_conversation_history": 6,
+    "template_validation": true,
+    "log_level": "INFO"
+  },
+
+  "template_defaults": {
+    "basic_qa": {
+      "max_context_length": 3000,
+      "include_sources": false
+    },
+    "detailed_analysis": {
+      "max_context_length": 4000,
+      "include_sources": true
+    },
+    "conversational": {
+      "max_context_length": 3500,
+      "include_sources": false,
+      "max_conversation_turns": 6
+    }
+  },
+
+  "model_limits": {
+    "gpt-3.5-turbo": {
+      "max_tokens": 4096,
+      "recommended_context": 3000
+    },
+    "gpt-4": {
+      "max_tokens": 8192,
+      "recommended_context": 6000
+    },
+    "claude-2": {
+      "max_tokens": 100000,
+      "recommended_context": 8000
+    }
+  }
+}

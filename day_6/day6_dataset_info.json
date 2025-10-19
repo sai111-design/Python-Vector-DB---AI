@@ -1,0 +1,17 @@
+{
+  "small": {
+    "n_vectors": 1000,
+    "dimension": 128,
+    "n_queries": 100
+  },
+  "medium": {
+    "n_vectors": 10000,
+    "dimension": 256,
+    "n_queries": 100
+  },
+  "large": {
+    "n_vectors": 50000,
+    "dimension": 384,
+    "n_queries": 100
+  }
+}
